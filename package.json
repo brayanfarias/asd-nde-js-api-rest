@@ -4,7 +4,7 @@
   "description": "Exercício 1 - Montagem de uma API RESTful",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.js",
+    "dev": "npm install && nodemon ./src/index.js",
     "start": "npm install && node ./src/index.js"
   },
   "keywords": [],
@@ -12,6 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "knex": "^2.5.1",
+    "sqlite3": "^5.1.6",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
