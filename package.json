@@ -4,7 +4,7 @@
   "description": "Exercício 1 - Montagem de uma API RESTful",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.js",
+    "dev": "npm install && nodemon ./src/index.js",
     "start": "npm install && node ./src/index.js"
   },
   "keywords": [],

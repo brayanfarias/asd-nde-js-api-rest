@@ -5,9 +5,9 @@ const PORT = 3000;
 
 app.use(express.json())
 
-const v1 = require('./v1')
+const v1 = require('./router/v1')
 app.use('/api/v1', v1)
-const v2 = require('./v2')
+const v2 = require('./router/v2')
 app.use('/api/v2', v2)
 
 

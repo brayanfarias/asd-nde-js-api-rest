@@ -2,8 +2,8 @@ const ProdutoService = require("../service/ProdutoService");
 
 class ProdutoController {
 
-    constructor() {
-        this.produtoService = new ProdutoService()
+    constructor(produtoService) {
+        this.produtoService = produtoService
     }
 
     create(req, res) {

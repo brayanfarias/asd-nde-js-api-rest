@@ -1,8 +1,10 @@
 const express = require('express');
 const v1 = express.Router()
-const ProdutoController = require('./controller/ProdutoController');
+const ProdutoController = require('../controller/ProdutoController');
+const ProdutoService = require('../service/ProdutoService');
 
-const produtoController = new ProdutoController()
+const produtoService =  new ProdutoService()
+const produtoController = new ProdutoController(produtoService)
 
 v1.post('/produtos', (req, res) => produtoController.create(req, res));
 v1.get('/produtos/:id', (req, res) => produtoController.getById(req, res));
